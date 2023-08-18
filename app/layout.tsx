@@ -37,6 +37,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          defer
+          src="https://unpkg.com/@tinybirdco/flock.js"
+          data-host="https://api.us-east.tinybird.co"
+          data-token="p.eyJ1IjogIjU1NzU0NGM2LWQ5OTItNDkyNi1hOGVmLTMxMzlmYmNhNWU0YiIsICJpZCI6ICI4Yjc1MzI2MC0yYWQ1LTRlYzUtYjQzZS0zM2YxMzk0ZDIwMDAiLCAiaG9zdCI6ICJ1c19lYXN0In0.CUrXVBEhFwG-zTo6kl7JpRJcxVfaDVXRxlDRDmryDSc"
+        />
+      </head>
       <body className={cn(cal.variable, inter.variable)}>
         <Providers>
           {children}
