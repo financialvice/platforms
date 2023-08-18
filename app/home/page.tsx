@@ -12,7 +12,7 @@ export default function HomePage() {
         className="w-48"
       />
       <h1 className="text-white">
-        Cam - Edit this page on{" "}
+        Cam change - Edit this page on{" "}
         <InlineSnippet className="ml-2 bg-blue-900 text-blue-100">
           app/home/page.tsx
         </InlineSnippet>
