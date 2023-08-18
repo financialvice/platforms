@@ -4,14 +4,15 @@ import Link from "next/link";
 import {
   ArrowLeft,
   BarChart3,
-  Edit3,
   Globe,
+  PenLine,
   Layout,
   LayoutDashboard,
   Megaphone,
   Menu,
   Newspaper,
   Settings,
+
 } from "lucide-react";
 import {
   useParams,
@@ -113,7 +114,7 @@ export default function Nav({ children }: { children: ReactNode }) {
           name: "Editor",
           href: `/post/${id}`,
           isActive: segments.length === 2,
-          icon: <Edit3 width={18} />,
+          icon: <PenLine width={18} />,
         },
         {
           name: "Settings",
