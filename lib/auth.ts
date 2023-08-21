@@ -12,7 +12,7 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.AUTH_GOOGLE_SECRET as string,
       profile(profile) {
         return {
-          id: profile.id as string,
+          id: profile.sub as string,
           name: profile.name as string,
           email: profile.email as string,
           image: profile.picture as string,
