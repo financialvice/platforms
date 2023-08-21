@@ -13,6 +13,7 @@ module.exports = {
       "pbs.twimg.com",
       "avatars.githubusercontent.com",
       "www.google.com",
+      "googleusercontent.com",
       "flag.vercel.app",
       "illustrations.popsy.co",
     ],
