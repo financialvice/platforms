@@ -12,12 +12,12 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.AUTH_GOOGLE_SECRET as string,
       profile(profile) {
         return {
-          id: profile.id.toString(),
-          name: profile.name || profile.login,
-          email: profile.email,
-          image: profile.avatar_url,
+          id: profile.id as string,
+          name: profile.name as string,
+          email: profile.email as string,
+          image: profile.picture as string,
         };
-      },
+      }
     }),
   ],
   pages: {
